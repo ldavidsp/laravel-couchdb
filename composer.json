@@ -1,5 +1,5 @@
 {
-  "name": "robsonvn/laravel-couchdb",
+  "name": "ldavidsp/laravel-couchdb",
   "description": "A CouchDB v2.0.0 based Eloquent model and Query builder for Laravel",
   "authors": [
     {
@@ -7,32 +7,32 @@
       "email": "robsonvnasc@gmail.com"
     }
   ],
-  "license" : "MIT",
+  "license": "MIT",
   "require": {
-    "php": "^7.2",
-    "illuminate/database": "5.4.*",
-    "illuminate/support": "5.4.*",
-    "illuminate/container": "5.4.*",
-    "illuminate/events": "5.4.*",
+    "php": "^7.2|^8.0",
+    "illuminate/database": "^8.57",
+    "illuminate/support": "^8.57",
+    "illuminate/container": "^8.57",
+    "illuminate/events": "^8.57",
+    "laravel/passport": "^10.1",
     "doctrine/couchdb": "^2.0.0-alpha1",
-    "adbario/php-dot-notation": "^1.2"
+    "adbario/php-dot-notation": "^2.2"
   },
-  "require-dev":{
-    "laravel/passport": "^3.0.0",
-    "phpunit/phpunit": "~6.0",
-    "orchestra/testbench": "^3.1",
-    "mockery/mockery": "^0.9"
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "mockery/mockery": "^1.4",
+    "orchestra/testbench": "^6.20.1"
   },
   "autoload": {
-        "psr-4": {
-            "Robsonvn\\CouchDB\\": "src"
-        }
-   },
-   "autoload-dev": {
-       "classmap": [
-           "tests/TestCase.php",
-           "tests/models",
-           "tests/seeds"
-       ]
-   }
+    "psr-4": {
+      "Robsonvn\\CouchDB\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/TestCase.php",
+      "tests/models",
+      "tests/seeds"
+    ]
+  }
 }
